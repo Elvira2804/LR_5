@@ -5,9 +5,9 @@
 #define M_PI 3.14159265358979323846
 
 double z_1(double gr);
-double z_2_a(double k, double x); 
-double z_2_b(double k, double x); 
-double z_2_y(double b, double a); 
+double z_2_a(double k, double x);
+double z_2_b(double k, double x);
+double z_2_y(double b, double a);
 
 int main(void)
 {
@@ -27,21 +27,21 @@ int main(void)
 
 
     //ЗАДАНИЕ 2
-    const double x = 2.2;
-    double k;
+    const double k = 2.0;
+    double x;
     double a, b, y;
 
     printf("\nЗадание 2\n");
-    printf("Введите значение параметра k: ");
-    scanf("%lf", &k);
+    printf("Введите значение параметра x: ");
+    scanf("%lf", &x);
 
     a = z_2_a(k, x);
     b = z_2_b(k, x);
     y = z_2_y(b, a);
 
     printf("\nРезультаты вычислений:\n");
+    printf("k = %.1f\n", k);
     printf("x = %.1f\n", x);
-    printf("k = %.0f\n", k);
     printf("a = %.5f\n", a);
     printf("b = %.5f\n", b);
     printf("y = %.3f\n", y);
